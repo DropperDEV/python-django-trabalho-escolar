@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'assets/img/asa-esquerda.png' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/entry.css' %}">
+    <link rel="stylesheet" href="{% static 'css/label.css' %}">
+    <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <link rel="stylesheet" href="{% static 'css/help.css' %}">
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+    <title>Loja Fênix</title>
+</head>
+<body>
+    <header>
+            <a href="{% static 'index.html' %}" class="header-img"><img src="{% static 'assets/img/logo.png' %}" alt="Logo do Site" ></a>
+            <a href="{% static 'help.html' %}" class="header-text">Precisa de ajuda?</a>
+            <a href="/log/" class="header-img-login"><img src="{% static 'assets/img/login.png' %}" alt="Login" width="66px" height="81px"></a>
+    </header>
+    <div class="pesquisa">
+            <input id="barra" type="search"  placeholder="Digite oque você procura" aria-label="campo busca">
+            <span id="button" aria-label="botão buscar"><img src="{% static 'assets/img/pesquisa.png' %}" alt=""></span>
+     </div>
+
+    <span class="borda"></span>
+    {% block content %}
+     aaa
+    {% endblock %}
+    <footer>
+        <div id="footer">
+            <div class="footer-box">
+                <ul class="main-footer">
+                    <h2>Ajuda:</h2>
+                    <li><a href="help-options/como-comprar.html">Como comprar</a></li>
+                    <li><a href="help-options/Prazos-e-entrega.html">Prazos e entregas</a></li>
+                    <li><a href="help-options/Forma-pagamento.html">Forma de pagamento</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <ul class="main-footer">
+                    <h2>Institucional:</h2>
+                    <li><a href="help-options/quem-somos.html">Quem somos?</a></li>
+                    <li><a href="help-options/termos-venda.html">Termos e condição de venda</a></li>
+                    <li><a href="help-options/politica-troca.html">Política de Troca e Devoluções</a></li>
+                    <li><a href="help-options/politica-privacidade.html">Política de Segurança e Privacidade</a></li>
+                    <li><a href="help-options/politica-cookies.html">Política de Cookies</a></li>          
+                </ul>
+            </div>
+            <div class="footer-box">
+                <ul class="main-footer">
+                    <h2>Cliente:</h2>
+                    <li><a href="login.html">Minha conta</a></li>
+                    <li><a href="login.html">Meus pedidos</a></li>
+                    <li><a href="login.html">Meus tickets</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h2>Segurança:</h2>
+                    <img src="{% static 'assets/img/certific-footer.png' %}" alt="Certificados e Prêmios">
+            </div>
+            <div class="footer-box">
+                <h2>Forma de pagamento:</h2>
+                    <img src="{% static 'assets/img/cards-footer.png' %}" alt="Forma de pagamento">
+            </div>
+         </div>
+    </footer>
+    <header>
+        <a href="index.html" class="header-img"><img src="{% static 'assets/img/logo.png' %}" alt="Logo do Site" ></a>
+    </header>
+</body>
+</html>

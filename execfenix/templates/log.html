@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="form">
+        <div class="main-form">
+            <img src="{% static 'assets/img/login-simbol.png' %}" class="form-ico" >
+            <h2 class="form-ico">Entrar</h2>
+                <form  name="formLogin" method="post" action="/dologin/">
+                        {% csrf_token %} 
+                        <label for="" class="label-form" >Usuário:</label>
+                        <input type="text" placeholder="Digite seu nome de usuário..." class="input-form" name="user">
+                        <label for="" class="label-form" >Senha:</label>
+                        <input type="password" name="password" placeholder="Digite sua senha..." class="input-form">
+                        <a href="/create/" id="redirect">Não possui conta?</a>
+                        <p class="button-center">
+                            <input class="button" type="submit" value="Entrar"></input>
+                        </p>
+                </form>
+        </div>
+    </div>
+{% endblock %}

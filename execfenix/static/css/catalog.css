@@ -1,0 +1,17 @@
+.div-product{
+    display: flex;
+    flex-direction: row;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.produto{
+    padding: 0px;
+    margin: 0px;
+    width: 267px;
+    border-radius: 5%;
+}

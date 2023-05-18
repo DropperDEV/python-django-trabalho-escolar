@@ -1,0 +1,105 @@
+@media (min-width: 320px) and (max-width: 480px){
+    /*HEADER*/
+    .header-img{
+        position: relative;
+        width: 30px;
+        margin-right: 190px;
+    }
+    .header-text{
+        display: none;
+    }
+    .header-img-login{
+        width: 60%;
+        margin-right: 0px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .pesquisa{
+        width: 90;
+        margin-left: 0;
+    }
+    #barra{
+        width: 412px;
+        margin-left: 5px;
+    }
+    #button{
+        position: absolute;
+        width: 44px;
+        height: 46px;
+        margin-top: 5%;
+        margin-left:85%;
+    }
+    /*ENTRY*/
+    #banner{
+        width: 90%;
+    }
+    #img-banner{
+        height: 500px;
+    }
+    #section{
+        display: flex;
+        flex-direction: column;
+    }
+    .sections{
+        width: 95%;
+        margin-bottom: 60px;
+        margin-left: 0px;
+    }
+    /*CATALOG*/
+    .placar{
+        margin: 15%;
+        margin-left: 0;
+    }
+    .produto{
+        display: block;
+        width: 70%;
+        border-radius: 5%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+    }
+    .div-product{
+        width: 90%;
+        margin: 0;
+        
+    }
+    /*FOOTER*/
+    .footer-box h2{
+        font-size: 30px;
+    }
+    .footer-box a{
+        font-size: 20px;
+    }
+    #footer{
+        flex-direction: column;
+        max-width: 430px;
+        justify-content: unset;
+        align-items: flex-start;
+    }
+    .main-footer{
+        width: 412px;
+        margin-right: 100px;
+        margin-left: 0px;
+    }
+    .footer-box img{
+        width: 300%;
+        margin-left: 0px;
+    }
+    .header-img:last-child{
+        align-items: center;
+        margin-right: 70%;
+    }
+    /*FORM*/
+    #form{
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    .input-form{
+        width: 80%;
+    }
+    .form-ico{
+        width: 20%;
+        margin-right: 5%;
+    }
+    
+}

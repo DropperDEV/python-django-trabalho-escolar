@@ -1,0 +1,30 @@
+.placar{
+    /*DIMENSÃO*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 46px;
+    margin-bottom: 40px;
+    margin-left: 127px;
+}
+
+.placar-titulo{
+
+    /*DIMENSÃO*/
+    display: flex;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    flex-wrap: wrap;
+    /*COR*/
+    color: #FFFFFF;
+}
+
+.placar-img{
+    /*DIMENSÃO*/
+    width: 64px;
+    height: 66px;
+    margin-right: 22px;
+}

@@ -1,0 +1,19 @@
+{% extends 'main.html'%}
+
+{% block content %}
+    <form  name="FormPassword" id="FormPassword" method="post" action="/ChangePassword/">
+        <div class="col-6 mt-4 m-auto">
+            {% if msg %}
+                <div class="alert {{class}}">
+                    {{msg}}
+                </div>
+            {% endif %}
+            {% csrf_token %}
+            <input class="form-control mt-4" type="email"  name="email" id="email" placeholder="Digite seu email: ">
+
+            <input class="form-control mt-4" type="password"  name="password" id="password" placeholder="Digite uma senha nova: ">
+
+            <input class="btn btn-primary mt-4" type="submit" value="Redefinir Senha">
+        </div>
+    </form>
+{% endblock %}

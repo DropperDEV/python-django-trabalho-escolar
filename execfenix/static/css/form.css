@@ -1,0 +1,95 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 941px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: #fff;
+}
+
+
+.form-ico{
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    
+    color: #000000;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+    margin: auto;
+    color: #000000;
+
+}
+
+.input-form{
+    justify-content: center; 
+    width: 910px;
+    height: 64px;
+    left: 517px;
+    top: 725px;
+    margin: auto;
+    background: #E4E4E4;
+}
+
+.input-form::-webkit-input-placeholder { font-size: 16px; }
+.input-form::-moz-placeholder { font-size: 16px; } /* firefox 19+ */
+.input-form:-ms-input-placeholder { font-size: 16px; } /* internet explorer */
+.input-form:-moz-placeholder { font-size: 16px; }
+
+.button-center{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button{
+    padding: 10px 120px;
+    margin-top: 60px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 75px;
+    
+    cursor: pointer;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FF630C 0%, #B30000 100%);
+}
+
+#redirect{
+    display: block;
+    position: absolute;
+    
+    text-decoration: none;
+    color: #ff5800;
+    float: right;
+    margin: 0 0 0 0;
+    padding: 8px 16px;
+}

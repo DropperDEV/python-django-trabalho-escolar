@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="form">
+        <div class="main-form">
+            <img src="{% static 'assets/img/login-simbol.png' %}" alt="" class="form-ico">
+            <h2 class="form-ico">Cadastro</h2>
+                <form  name="formCreate" method="post" action="/store/">
+                    {% if msg %}
+                    <script>
+                        function funcao1()
+                        {
+                        alert("{{msg}}");
+                        }
+                        </script>
+                    {% endif %}
+                    {% csrf_token %} 
+                    <label for="" class="label-form">Usuário:</label>
+                    <input type="text" placeholder="Digite seu nome de usuário..." class="input-form" name="user">
+
+                    <label for="" class="label-form">Email:</label>
+                    <input type="text" placeholder="Digite um email.." class="input-form" name="email">
+
+                    <label for="" class="label-form" >Senha:</label>
+                    <input type="password" placeholder="Digite sua senha..." class="input-form" name="password">
+
+                    <label for="" class="label-form" >Confirmar senha:</label>
+                    <input type="password" placeholder="Confirme sua senha..." class="input-form" name="password-conf">
+
+                    <a href="/log/" id="redirect">Possui conta?</a>
+                    <p class="button-center">
+                        <input class="button" type="submit" value="Entrar"></input>
+                    </p>
+                </form>
+        </div>
+    </div>
+{% endblock %}

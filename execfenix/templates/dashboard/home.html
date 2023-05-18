@@ -1,0 +1,19 @@
+{% extends 'main.html'%}
+
+{% block content %}
+    {% if request.user.is_authenticated %}
+    <main class="account-main">
+        <div class="account-div-vertical">
+            <img src="assets/img/account-img.png" alt="" id="account-img-perfil">
+            <p class="account-string-perfil">Perfil</p>
+            <label for="#" class="account-string-label">Usuário: Nome da user da silva</label>
+            <p class="account-string-email">EMAIL</p>
+            <a href="#" class="account-options">Mudar nome de usuário</a>
+            <a href="#" class="account-options">Mudar email</a>
+            <a href="#" class="account-options">Mudar senha</a>
+        </div>
+    </main>
+    {% else %}
+        Somente para pessoas autorizadas.
+    {% endif %}
+{% endblock %}
