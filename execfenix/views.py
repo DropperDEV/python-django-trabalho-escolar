@@ -34,7 +34,8 @@ def dologin(request):
     user = authenticate(username=request.POST['user'], password=request.POST['password'])
     if user is not None:
         login(request, user)
-        return redirect('/dashboard/')
+        context= {"user": user, "user": request.user}
+        return render(request, 'dashboard/home.html/',context)
     else:
         data['msg'] = 'Usuário ou senha incorreto'
         data['class'] = 'alert-danger'
@@ -51,7 +52,7 @@ def logouts(request):
 
 # Form Mudar Senha
 def csenha(request):
-    return render(request,'csenha.html')
+    return render(request,'dashboard/csenha.html')
 
 # Mudar senha
 def ChangePassword(request):
@@ -60,3 +61,4 @@ def ChangePassword(request):
     user.save()
     logout(request)
     return redirect('/log/')
+

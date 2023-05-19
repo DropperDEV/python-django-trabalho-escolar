@@ -1,0 +1,19 @@
+{% extends 'main.html'%}
+{% load static %}
+
+{% block content %}
+    <form  name="FormPassword" id="FormPassword" method="post" action="/ChangePassword/">
+        <main class="account-main">
+            <div class="account-div-vertical">
+                <img src="{% static 'assets/img/account-img.png' %}" id="account-img-perfil">
+                <p class="account-string-perfil">Perfil</p>
+                {% csrf_token %}
+                <input type="email" class="account-string-label" name="email" id="email" placeholder="Digite seu email: ">
+
+                <input type="password" class="account-string-label" name="password" id="password" placeholder="Digite sua nova senha: ">
+
+                <input class="account-options" type="submit">Concluir alterações</input>
+            </div>
+        </main>
+    </form>
+{% endblock %}
