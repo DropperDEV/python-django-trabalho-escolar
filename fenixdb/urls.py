@@ -28,5 +28,6 @@ urlpatterns = [
     path('dashboard/', dashboard),
     path('logouts/', logouts),
     path('ChangePassword/', ChangePassword),
-    path('csenha/', csenha),
+    path('csenha/', csenha)
+
 ]

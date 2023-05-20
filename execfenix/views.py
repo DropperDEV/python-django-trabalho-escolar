@@ -20,10 +20,7 @@ def store(request):
     else:
         user = User.objects.create_user(request.POST['user'],request.POST['email'],request.POST['password'])
         user.save()
-        user.user_permissions.add(25)
-        data['msg'] = 'Cadastro com sucesso!'
-        data['class'] = 'alert-success'
-    return render(request,'create.html',data)
+    return render(request,'create.html')
 #   Login
 def log(request):
     return render(request,'log.html')
@@ -61,4 +58,3 @@ def ChangePassword(request):
     user.save()
     logout(request)
     return redirect('/log/')
-
